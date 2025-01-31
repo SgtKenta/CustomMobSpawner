@@ -62,7 +62,7 @@ class Main extends PluginBase {
             $type = strtolower($args[0]);
             $count = min((int)($args[1] ?? 1), 64);
 
-            $block = VanillaBlocks::MONSTER_SPAWNER()->asItem();
+            $block = VanillaBlocks::MOB_SPAWNER()->asItem();
             $item->getNamedTag()->setTag(self::SPAWNER_DATA_KEY, CompoundTag::create()
                 ->setString("type", $type)
                 ->setInt("count", $count)

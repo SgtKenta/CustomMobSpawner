@@ -1,0 +1,17 @@
+name: StackedSpawners
+main: StackedSpawners\Main
+version: 1.0.0
+api: 5.0.0
+author: Dzheyden8561
+description: A stacked spawner system with offline processing for PocketMine-MP.
+
+commands:
+  spawnergive:
+    description: Give a stacked spawner to a player.
+    usage: "/spawnergive <mobtype> [count]"
+    permission: stackedspawners.command.give
+
+permissions:
+  stackedspawners.command.give:
+    default: op
+    description: Allows the player to use the /spawnergive command.
